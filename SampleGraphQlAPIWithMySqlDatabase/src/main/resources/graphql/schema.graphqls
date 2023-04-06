@@ -1,0 +1,19 @@
+schema {
+		query: Query
+	  }
+
+type CourseType {
+	id: ID!
+	courseName: String
+	rating: String
+	price: String
+	trainerName: String
+	numberOfDays: String	
+}
+
+type Query {
+	allCourses: [CourseType]
+	getCourseById(courseId:Int): CourseType	
+}
+
+
